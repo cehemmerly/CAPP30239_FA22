@@ -1,5 +1,10 @@
 # Claire Hemmerly
 
-![20220927_102543](https://user-images.githubusercontent.com/90402715/193110008-31f6fdf8-6b7c-4cb0-8923-b56448ddab61.jpg)
+Hi! My name is Claire and I'm a master's student at the University of Chicago. I'm completing a degree in Compulational Analysis and Public Policy with a focus on energy and environmental policy. Here's a snapshot of me in data
 
-Hi! My name is Claire and I'm a master's student at the University of Chicago, completing a degree in Compulational Analysis and Public Policy. I'm particularly interested in environmental policy.
+![20220927_102543 (1)](https://user-images.githubusercontent.com/90402715/193110671-8830ad93-bbb2-4b75-8e85-2433793183ce.jpg)
+
+[Learn more about data selfies] (https://ideas.ted.com/how-to-draw-your-own-selfie-using-your-personal-data/)
+
+This repository contains my coursework for CAPP30239 Data Visualization, Fall 2022
+
