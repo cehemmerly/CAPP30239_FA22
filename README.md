@@ -5,13 +5,15 @@ This repository contains coursework for CAPP30239 Data Visualization for Pulblic
 ## Assignments
 
 week_01: 
-  * Assignment: Introduction: Get to know me 
   * Class work: Introduction to html and css
+  * Assignment: Introduction: Get to know me 
           
 week_02: 
-  * Assignment: Dear Data Project
   * Class work: Introduction to Javascript
+  * Assignment: Dear Data Project
   
 week_03:
-  * Assignment: Final project data repository 
   * Class work: Introduction to D3 - Bar Charts
+  * Assignment: Bar Chart Exercise
+  * Final Project: Data repository 
+
