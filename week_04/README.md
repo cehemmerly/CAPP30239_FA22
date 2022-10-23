@@ -8,5 +8,9 @@ This repository contains the class work and homework for week 4, as well as the 
   * covid.csv (required for horizontal-bar)
   * line.html
   * line.js
-  * interest-rates.csv (required for line)
+  * long-term-interest-rates-monthly.csv (required for line)
 
+### Homework files - Line Chart Excercise
+  * homework.html
+  * homework.js
+  * long-term-interest-rates-canada.csv
