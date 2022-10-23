@@ -16,4 +16,9 @@ week_03:
   * Class work: Introduction to D3 - Bar Charts
   * Assignment: Bar Chart Exercise
   * Final Project: Data repository 
+  
+week_04:
+  * Class work: D3 - Line Charts and Area Charts
+  * Assignment: Line Chart Exercise
+
 
