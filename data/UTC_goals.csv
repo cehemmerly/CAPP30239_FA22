@@ -1,19 +1,20 @@
 City,UTC,Goal
-Annapolis,42,50.00%
-Austin,36,50.00%
-Baltimore,28,40.00%
-Boston,27,35.00%
+Annapolis,42,50
+Atlanta,47,
+Austin,36,50
+Baltimore,28,40
+Boston,27,35
 Chicago,16,
-Las Vegas,9,20.00%
-Los Angeles ,24,28.00%
-Milwaukee,22,40.00%
+Las Vegas,9,20
+Los Angeles ,24,28
+Milwaukee,22,40
 New Haven ,38,
-New Orleans ,18,50.00%
-New York,22,30.00%
-Philadelphia,15,30.00%
-Phoenix,10.00%,25.00%
-Pittsburgh,42.00%,60.00%
-Portland,29.8,33.00%
-Providence,27.4,30.00%
-Seattle,28,30.00%
-Washington DC,27,40.00%
+New Orleans ,18,50
+New York,22,30
+Philadelphia,15,30
+Phoenix,10,25
+Pittsburgh,42,60
+Portland,29.8,33
+Providence,27.4,30
+Seattle,28,30
+Washington DC,27,40
