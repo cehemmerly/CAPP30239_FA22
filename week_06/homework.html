@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Police Killings in 2015</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Police Killings by State in 2015</h1>
+        <p>This is a simple chart looking at the number of police killings per 100,000 people in each state. 
+            The purpose of the chart was to evaluate which states have the most police killings. I used a sorted horizontal bar 
+            chart to be able to see the states ranked most to least in number of killings per 100,000 people. Ideally, with more
+            time I would like to add some annotations and interaction. I would like to add annotation of the country level
+            killings per 100,000 to add context to the number for each state. I would also like to be able to filter by race if I
+            had population numbers for each state.
+        </p>
+        <div id="bar-chart"></div>
+    </div>
+    <div class="container">
+        <h1>Most People of Color Killed by Police are in Their 20's and 30's</h1>
+        <p>The purpose of this chart is to examine the ages of most people killed by police. I used a histogram to see the distribution
+            of ages. I added the interaction of filtering by race because I wanted to see if there is a difference in the ages of people
+            killed by race. There is actually a noticable difference in the distribution of the ages of black and hispanic people compared 
+            to white people. There are signficantly more black and hispanic people killed in their 20's, compared with white people, where 
+            the ages are more evenly distributed around 30-40.
+        </p>
+        <p>
+          <label>
+            Race:
+            <select>
+                <option value="Black">Black</option>
+                <option value="Hispanic">Hispanic</option>
+                <option value="Asian">Asian</option>
+                <option value="Native">Native</option>
+                <option value="White">White</option>
+            </select>
+             </label>
+        </p>
+        <div id="chart"></div>
+    </div>
+    </div>
+    <div class="container">
+        <h1>The Majority of People Killed are Armed with a Gun</h1>
+        <p>The purpose of this chart evaluate if people killed by police are typically armed and if so, what they are armed with. 
+            I used a ring chart to see the relative proportion of weapons being weilded by people killed. I felt like a ring chart was
+            appropriate in the case because the it clearly shows how many people are weilding guns compared to being unarmed or wielding a 
+            different weapon. This is another case where I would have liked to add the interaction with race to continue evaluating the 
+            differences in how people are killed by race, if I had more time.
+        </p>
+        <div id="ring"></div>
+</body>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="filtered-histogram.js"></script>
+<script src="horizontal-bar.js"></script>
+<script src="ring.js"></script>
+</html>
