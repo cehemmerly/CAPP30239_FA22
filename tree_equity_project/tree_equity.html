@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicago Tree Equity</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Chicago is Lacking in Canopy Cover Compared to Other Cities</h1>
+        <p>Many cities across the country have significantly higher canopy levels than Chicago and have set goals to
+            increase their canopy cover. Chicago currently does not have a target to which it aims to increase its urban canopy.
+        </p>
+        <div id="bar-chart"></div>
+        <p>
+            <a href="https://www.vibrantcitieslab.com/wordpress/wp-content/uploads/2017/04/Tree-Canopy-Goals-US-2014.pdf">Vibrant Cities Lab</a>
+        </p>
+    </div>
+    <div id="container">
+        <h1>Over the Last 10 Years Chicago has Destroyed More Trees than it has Planted</h1>
+        <div id="diverging-chart"></div>
+        <p>This data is of plantings/ removals by Chicago Bureau of Forestry, transportation department and other entities seeking permits. Reported by 
+            <a href="https://www.chicagotribune.com/news/environment/ct-chicago-trees-equity-20220612-prpuxgsabzc2fa4fnwnyf4fbku-story.html">The Chicago Tribune</a>
+        </p>
+    </div>
+    <div id="container">
+        <h1>The Distribution of Trees in Chicago is not Equitable</h1>
+        <p>American Forests has created a 'Tree Equity Score' for cities and neighborhoods across the country. This equity score 
+            takes into account current canopy cover, population density, poverty rates, racial demographics, health metrics, and 
+            summer surface temperatures. Many neighborhoods in the southwest parts of Chicago scored a low Tree Equity Score.
+        </p>
+        <div id="legend"></div>
+        <div id="map"></div>
+        <p>
+            <a href="https://www.treeequityscore.org/map/#10.31/41.852/-87.5946">treeequityscore.org</a>
+        </p>
+    </div>
+    <div id="container">
+        <h1>Over the last 10 years Chicago Planted Trees in Places with the Least Need</h1>
+        <p>This chart shows the number of trees planted per street mile between 2011 and 2021 in each Chicago neighborhood.
+            More trees were planted in areas with a higher Tree Equity Score, meaning the trees were planted in neighborhoods that
+            already had more canopy, were cooler, richer, and had fewer people of color.
+        </p>
+        <div id="legend-color"></div>
+        <div id="legend-size"></div>
+        <div id="scatter"></div>
+        <p>Data on the number of tree planted is from reporting by  
+            <a href="https://www.chicagotribune.com/news/environment/ct-chicago-trees-equity-20220612-prpuxgsabzc2fa4fnwnyf4fbku-story.html">The Chicago Tribune</a>
+        Demographic data is from 
+        <a href="https://www.treeequityscore.org/map/#10.31/41.852/-87.5946">treeequityscore.org</a>
+        </p>
+    </div>
+</body>
+</html>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.js"></script>
+<script src="d3-color-legend.js"></script>
+<script src="horizontal_bar.js"></script>
+<script src="scatter.js"></script>
+<script src="map.js"></script>
+<script src="diverging_area.js"></script>
