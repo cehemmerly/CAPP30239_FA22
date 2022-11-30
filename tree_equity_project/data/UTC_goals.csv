@@ -1,20 +1,23 @@
 City,UTC,Goal_absolute,Goal_distance
 Annapolis,42,50,8
-Atlanta,47,,0
-Austin,36,50,14
-Baltimore,28,40,12
-Boston,27,35,8
-Chicago,16,,0
+Atlanta,48,,
+Austin,32,40,8
+Baltimore,20,40,20
+Boston,29,49,20
+Chicago,17,25,8
+Denver,16,31,15
+Detroit,23,40,17
+Indianapolis,14,19,5
 Las Vegas,9,20,11
-Los Angeles ,24,28,4
+Los Angeles ,21,28,7
 Milwaukee,22,40,18
-New Haven ,38,,0
-New Orleans ,18,50,32
-New York,22,30,8
-Philadelphia,15,30,15
+New Haven ,38,,
+New Orleans ,23,,
+New York,24,30,6
+Philadelphia,20,30,10
 Phoenix,10,25,15
-Pittsburgh,42,60,18
+Pittsburgh,40,60,20
 Portland,30,33,3
-Providence,27,30,3
+Providence,23,30,7
 Seattle,28,30,2
-Washington DC,27,40,13
+Washington DC,35,40,5
