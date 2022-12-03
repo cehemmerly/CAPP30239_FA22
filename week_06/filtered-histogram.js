@@ -30,6 +30,7 @@ d3.json('a3cleanedonly2015.json').then((data) => {
         const filtered = data.filter(a => a.Race == m);
 
         const bins = d3.bin()
+            .domain([0,90])
             .thresholds([10,20,30,40,50,60,70,80,90])
             .value(d => d.Age)(filtered);
 
@@ -51,7 +52,7 @@ d3.json('a3cleanedonly2015.json').then((data) => {
                 .attr("height", d => height - margin.bottom - y(d.length));
 
             g.append("text")
-                .text(d => d.length)
+                .text(d => d.length == 0 ? "" : d.length)
                 .attr("x", d => x(d.x0) + (x(d.x1) - x(d.x0)) / 2)
                 .attr("y", height - margin.bottom - 5)
                 .attr("text-anchor", "middle")
@@ -68,7 +69,7 @@ d3.json('a3cleanedonly2015.json').then((data) => {
                 .attr("height", d => height - margin.bottom - y(d.length));
 
             update.select("text")
-                .text(d => d.length)
+                .text(d => d.length == 0 ? "" : d.length)
                 .transition()
                 .duration(750)
                 .attr("y", d => y(d.length) - 5);
