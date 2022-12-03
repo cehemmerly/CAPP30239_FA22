@@ -6,7 +6,7 @@ To view the project go to:
 https://cehemmerly.github.io/CAPP30239_FA22/tree_equity_project/tree_equity.html
 
 Raw data was collected from three sources:
-  * [treeequity.org](https://www.treeequityscore.org/)
+  * [treeequitysore.org](https://www.treeequityscore.org/)
   * [Vibrant Cities Lab](https://www.vibrantcitieslab.com/resources/tree-canopy-goals-for-us-cities/)
   * [The Chicago Tribune](https://www.chicagotribune.com/news/environment/ct-chicago-trees-equity-20220612-prpuxgsabzc2fa4fnwnyf4fbku-story.html)
 
