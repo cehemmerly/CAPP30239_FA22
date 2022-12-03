@@ -12,6 +12,6 @@ Raw data was collected from three sources:
 
 Scripts for data processing are available in the raw_data folder
 
-Final data used to create the graphs is available in teh data folder
+Final data used to create the graphs is available in the data folder
 
 
