@@ -20,5 +20,13 @@ week_03:
 week_04:
   * Class work: D3 - Line Charts and Area Charts
   * Assignment: Line Chart Exercise
+  
+week_06:
+  * Assignment: Create three charts from Washington Post data on police killings
+  https://cehemmerly.github.io/CAPP30239_FA22/week_06/homework.html
+
+tree_eqity_project: Class fianl project on urban tree canopy in Chicago
+https://cehemmerly.github.io/CAPP30239_FA22/tree_equity_project/tree_equity.html
+
 
 
