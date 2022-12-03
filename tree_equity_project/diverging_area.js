@@ -1,3 +1,6 @@
+// Difference chart of Trees Planted per Year
+// https://observablehq.com/@d3/difference-chart
+
 function DifferenceChart(data, {
     x = ([x]) => x, // given d in data, returns the (temporal) x-value
     y1 = () => 0, // given d in data, returns the (quantitative) baseline y-value
@@ -7,7 +10,7 @@ function DifferenceChart(data, {
     marginTop = 20, // top margin, in pixels
     marginRight = 30, // right margin, in pixels
     marginBottom = 30, // bottom margin, in pixels
-    marginLeft = 40, // left margin, in pixels
+    marginLeft = 60, // left margin, in pixels
     width = 800, // outer width, in pixels
     height = 600, // outer height, in pixels
     xType = d3.scaleUtc, // type of x-scale
@@ -52,9 +55,7 @@ function DifferenceChart(data, {
   
     const svg = d3.select("#diverging-chart")
         .append("svg")
-        .attr("height", height)
         .attr("viewBox", [0, 0, width, height])
-        .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
   
     svg.append("g")
         .attr("transform", `translate(${marginLeft},0)`)
@@ -65,13 +66,13 @@ function DifferenceChart(data, {
             .attr("stroke-opacity", 0.1))
         .call(g => g.append("text")
             .attr("x", -marginLeft)
-            .attr("y", 10)
+            .attr("y", 15)
             .attr("fill", "currentColor")
             .attr("text-anchor", "start")
             .text(yLabel))
         .call(g => g.append("text")
             .attr("x", -marginLeft)
-            .attr("y", height - marginBottom)
+            .attr("y", height - marginBottom -8)
             .attr("fill", "currentColor")
             .attr("text-anchor", "start")
             .text("↓ More Trees Destroyed"));;
@@ -117,7 +118,7 @@ function DifferenceChart(data, {
         note: {
           label: "In 2008 the Ash Borer Beattle was confirmed in Chicago",
           align: "right",
-          wrap: 150
+          wrap: 180
         },
         color: ["black"],
         x: xScale(2008),
@@ -146,7 +147,7 @@ d3.csv('data/chicago_net_num_trees.csv').then((data) => {DifferenceChart(data, {
     colors: d3.reverse(d3.schemeRdBu[3]),
     curve: d3.curveStep,
     height: 600,
-    marginLeft: 50,
+    marginLeft: 65,
     xType: d3.scaleLinear,
     colors: d3.schemeDark2
   })

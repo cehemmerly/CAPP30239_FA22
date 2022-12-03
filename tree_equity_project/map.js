@@ -1,11 +1,13 @@
+// Chloropleth Map of Chicago Tree Equity Scores
+
 const tooltip = d3.select("body")
   .append("div")
   .attr("class", "svg-tooltip")
   .style("position", "absolute")
   .style("visibility", "hidden");
 
-const height = 610,
-  width = 975;
+const height = 500,
+  width = 400;
 
 const svg = d3.select("#map")
   .append("svg")
@@ -30,7 +32,6 @@ Promise.all([
   .fitSize([width, height], mesh);
   const path = d3.geoPath().projection(projection);
 
-  // Quantize evenly breakups domain into range buckets
   const color = d3.scaleQuantize()
   .domain([70, 100]).nice()
   .range(d3.schemeYlGn[6]);

@@ -2,8 +2,8 @@
 
 d3.csv('data/chicago_tree_equity.csv').then(data => {
 
-    let height = 400,
-    width = 600,
+    let height = 600,
+    width = 800,
     margin = ({ top: 25, right: 30, bottom: 50, left: 60 });
   
     const svg = d3.select("#scatter")
@@ -24,8 +24,6 @@ d3.csv('data/chicago_tree_equity.csv').then(data => {
     let y = d3.scaleLinear()
         .domain(d3.extent(data, d => +d.trees_planted)).nice()
         .range([height - margin.bottom, margin.top]);
-
-    const C = d3.map(data, d => +d.avg_temp)
 
     const color = d3.scaleQuantize()
         .domain([15,25])
@@ -77,7 +75,7 @@ d3.csv('data/chicago_tree_equity.csv').then(data => {
         tooltip
             .style("visibility", "visible")
             .html(`Neighborhood: ${d.community}<br>Number Trees Planted: ${d.trees_planted}<br>Tree Equity Score: ${d.tes.toFixed(1)}
-            <br>%People of Color: ${(d.pctpoc*100).toFixed(0)}% <br>Average Summer Temp: ${d.avg_temp.toFixed(1)}°F`);
+            <br>%People of Color: ${(d.pctpoc*100).toFixed(0)}% <br>Average Summer Temp: ${d.avg_temp.toFixed(1)}°F<br>%People in Poverty: ${(d.pctpov*100).toFixed(0)}%`);
         })
         .on("mousemove", function(event) {
         tooltip
@@ -89,25 +87,6 @@ d3.csv('data/chicago_tree_equity.csv').then(data => {
         tooltip.style("visibility", "hidden");
         })
 
-    // var linear = d3.scaleQuantize()
-    //     .domain([15,25])
-    //     .range(d3.schemeRdYlBu[6]);
-      
-    // var legend_color = d3.select("#legend-color")
-    //     .append("svg");
-      
-    // legend_color.append("g")
-    // .attr("class", "legendLinear")
-    // .attr("transform", "translate(20,20)");
-    
-    // var legendLinear = d3.legendColor()
-    // .shapeWidth(30)
-    // .cells(6)
-    // .orient('horizontal')
-    // .scale(linear);
-    
-    // legend_color.select(".legendLinear")
-    // .call(legendLinear);
 
     d3.select(`#legend-color`)
     .node()
@@ -146,9 +125,9 @@ d3.csv('data/chicago_tree_equity.csv').then(data => {
             note: {
             label: "Percent POC: 21%, Average Summer Temp: 77.9°F",
             title: "Lakeview",
-            align: "right",  // try right or left
-            wrap: 200,  // try something smaller to see text split in several lines
-            padding: 10   // More = text lower
+            align: "right",  
+            wrap: 200,  
+            padding: 10  
             },
             color: ["grey"],
             x: x(95.3),
@@ -158,7 +137,6 @@ d3.csv('data/chicago_tree_equity.csv').then(data => {
         }
         ]
         
-    // Add annotation to the chart
     const makeAnnotation1 = d3.annotation()
         .annotations(annotation1)
     svg.append("g")
@@ -169,9 +147,9 @@ d3.csv('data/chicago_tree_equity.csv').then(data => {
             note: {
             label: "Percent POC: 83%, Average Summer Temp: 84.7°F",
             title: "Archer Heights",
-            align: "right",  // try right or left
-            wrap: 200,  // try something smaller to see text split in several lines
-            padding: 10   // More = text lower
+            align: "right",  
+            wrap: 200,  
+            padding: 10   
             },
             color: ["grey"],
             x: x(70.7),

@@ -6,53 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chicago Tree Equity</title>
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Chicago is Lacking in Canopy Cover Compared to Other Cities</h1>
-        <p>Many cities across the country have significantly higher canopy levels than Chicago and have set goals to
-            increase their canopy cover. Chicago currently does not have a target to which it aims to increase its urban canopy.
+    <div class="container">
+        <h1>Chicago Needs to Improve it's Urban Canopy and Do it with a Focus on Equity</h1>
+        <h2>
+            Urban Tree Canopy is an Important Resource for City Residents
+        </h2>       
+        <p>Urban tree canopy is a highly beneficial resource with the potential to significantly improve quality of life for urban residents. Urban tree canopy has been shown to decrease urban heat island effects, reduce flooding, and improve air quality. Additionally, studies have shown that access to trees can improve both mental and physical health.</p>
+        <div class="flex-container">
+            <div class="flex-item">
+                <h4>Urban Heat Island: </h4>
+                <ul>
+                    <li><b>Cities are up to 7℉ hotter</b> than the surrounding areas.<sup>1</sup></li>
+                    <li>Some cities are warming at twice the global rate of temperature increase caused by climate change.<sup>2</sup></li>
+                    <li><b>Trees can provide significant cooling effects</b>, evaporation and shade from canopy can cool air up to 9℉.<sup>3</sup></li>
+                </ul>
+            </div>
+            <div class="flex-item">
+                <h4>Health: </h4>
+                <ul>
+                    <li><b>Cities experience a high concentration of air pollution</b> leading to increased respiratory health problems.<sup>4</sup></li>
+                    <li><b>Trees help capture air pollution</b> and can reduce rate of asthma and lung cancer.<sup>5</sup></li>
+                    <li>Studies have shown <b>correlation between urban trees and improved mental health</b>, such as decreased levels of exhaustion, improved mood, and increased attention span.<sup>5</sup></li>
+                </ul>
+            </div>
+        </div>
+            <div class="chart">
+                <h2>Chicago's Canopy is Lacking Compared to Other Cities</h2>
+                <div id="bar-chart" class="flex-item-chart"></div>
+                <p><a href="https://www.vibrantcitieslab.com/wordpress/wp-content/uploads/2017/04/Tree-Canopy-Goals-US-2014.pdf">Vibrant Cities Lab</a></p>
+            </div>
+    
+    <p>Chicago’s urban tree canopy is significantly lower than many other US cities, with only 17% of the city's area currently covered by trees. This tree cover is below comparable cities like New York (22%) and LA (24%) and far below cities like Atlanta (47%) and Pittsburgh (42%). Many cities, including the four just listed, have implemented ambitious canopy cover goals to increase their urban canopy. According to Vibrant Cities Lab, Chicago has a goal to reach 25% tree canopy cover, which is one of the lowest goals reported.</p>
+    
+        <div class="float-container">
+            <h2>Over the Last 10 Years Chicago has Destroyed More Trees than it has Planted</h2>
+            <div id="diverging-chart" class="float-right chart"></div>
+            <p>According to reporting from 
+                <a href="https://www.chicagotribune.com/news/environment/ct-chicago-trees-equity-20220612-prpuxgsabzc2fa4fnwnyf4fbku-story.html">The Chicago Tribune,</a>
+                since 2011 Chicago has been destroying more trees that it is planting each year. It was not clear from the city records why the trees were removed, although the article noted that <b>tree damage from the Emerald Ash Borer beetle, as well as extreme weather due to climate change were cited by the city as the main cause for tree removal</b>.
+            </p>
+            <p>The Emerald Ash Borer is an invasive species of beetles that is responsible for killing 30 million trees in the northeastern US and Canada. The beetle larvae feed under the bark and outer sapwood of the ash tree, producing tunnels that eventually kill branches and entire trees. The Emerald Ash Borer poses a severe threat to the Chicago canopy as 85,000 trees on the public right-of-way are susceptible Ash trees, as well as an additional 300,000 trees on private property.<sup>6</sup> While the city may eventually be able to replace trees killed by the beetle, new saplings have significantly smaller canopies than older trees and it will take decades for the saplings to grow sufficiently to fully replace the lost canopy cover.</p>
+            <p>It should be noted that reported records on tree plantings and removal are from the Chicago Bureau of Forestry on Chicago public right-of-way and do not include records of tree plantings or removal on private property.</p>
+        </div>
+        <div class="flex-container">
+           
+            <div class="flex-item">
+            <h1>The Distribution of Trees in Chicago is not Equitable</h1>
+            <p>American Forests, a nation-wide non-profit, which works to conserve and restore forests in the United States, recently released its Tree Equity Score project. This project evaluates the equitable access to trees in cities in the US. Each region receives its own tree equity scores based on current levels of canopy and socio-economic demographics. The lower the score, the higher the priority that area should be for new tree plantings.
+            </p>
+            <h4>What goes into the Tree Equity Score: </h4>
+            <ul>
+                <li>A canopy target based on natural biome (is the city in a region of the country with naturally high forest cover, like Philadelphia, or in a desert, like Las Vegas?)</li>
+                <li>The current level of canopy</li>
+                <li>Population density</li>
+                <li>Percent of the population below poverty</li>
+                <li>Percent of the population who are people of color</li>
+                <li>Unemployment rate</li>
+                <li>Number of Children</li>
+                <li>Number of Senior Citizens</li>
+                <li>Health Indicators (self reported physical health challenges, mental health challenges, and asthma rates)</li>
+                <li>Average summer temperature</li>
+            </ul>
+            </div>
+            <div class="flex-item">
+                <div id="legend"></div>
+                <div id="map"></div>
+            <p id="tes-ref">
+                <a href="https://www.treeequityscore.org/map/#10.31/41.852/-87.5946">treeequityscore.org</a>
+            </p>
+            </div>
+        </div>
+        <p><b>Neighborhoods on Chicago’s south and west sides have significantly lower Tree Equity Scores</b> than neighborhoods on the north side of the city. To anyone familiar with Chicago, this is an unsurprising statistic. The neighborhoods on the south and west sides typically have a higher proportion of people of color and higher poverty rates. These neighborhoods also have historically experienced significant disinvestment and lack of support from the city, while the wealther neighborhoods on the north side have received many more resources.</p> 
+        <h2>Over the last 10 years Chicago Planted Trees in Places with the Least Need</h2>
+        <p>The below chart shows a comparison of the number of trees planted per street mile of a neighborhood between 2011 and 2021 and the Tree Equity Score of that neighborhood. The size of the circle represents the proportion of each neighborhood that is people of color, with larger circles indicating a higher percentage. The color of the circle demonstrates the average summer temperature. Cooler temperatures are in blue and hotter temperatures are in red.
         </p>
-        <div id="bar-chart"></div>
-        <p>
-            <a href="https://www.vibrantcitieslab.com/wordpress/wp-content/uploads/2017/04/Tree-Canopy-Goals-US-2014.pdf">Vibrant Cities Lab</a>
-        </p>
-    </div>
-    <div id="container">
-        <h1>Over the Last 10 Years Chicago has Destroyed More Trees than it has Planted</h1>
-        <div id="diverging-chart"></div>
-        <p>This data is of plantings/ removals by Chicago Bureau of Forestry, transportation department and other entities seeking permits. Reported by 
-            <a href="https://www.chicagotribune.com/news/environment/ct-chicago-trees-equity-20220612-prpuxgsabzc2fa4fnwnyf4fbku-story.html">The Chicago Tribune</a>
-        </p>
-    </div>
-    <div id="container">
-        <h1>The Distribution of Trees in Chicago is not Equitable</h1>
-        <p>American Forests has created a 'Tree Equity Score' for cities and neighborhoods across the country. This equity score 
-            takes into account current canopy cover, population density, poverty rates, racial demographics, health metrics, and 
-            summer surface temperatures. Many neighborhoods in the southwest parts of Chicago scored a low Tree Equity Score.
-        </p>
-        <div id="legend"></div>
-        <div id="map"></div>
-        <p>
-            <a href="https://www.treeequityscore.org/map/#10.31/41.852/-87.5946">treeequityscore.org</a>
-        </p>
-    </div>
-    <div id="container">
-        <h1>Over the last 10 years Chicago Planted Trees in Places with the Least Need</h1>
-        <p>This chart shows the number of trees planted per street mile between 2011 and 2021 in each Chicago neighborhood.
-            More trees were planted in areas with a higher Tree Equity Score, meaning the trees were planted in neighborhoods that
-            already had more canopy, were cooler, richer, and had fewer people of color.
-        </p>
-        <div id="legend-color"></div>
-        <div id="legend-size"></div>
+        <div class="flex-container"> 
+            <div class="flex-item">           
+                <div id="legend-color"></div>
+            </div> 
+            <div class="flex-item">           
+            <div id="legend-size"></div>
+            </div> 
+        </div>
+
         <div id="scatter"></div>
-        <p>Data on the number of tree planted is from reporting by  
-            <a href="https://www.chicagotribune.com/news/environment/ct-chicago-trees-equity-20220612-prpuxgsabzc2fa4fnwnyf4fbku-story.html">The Chicago Tribune</a>
-        Demographic data is from 
-        <a href="https://www.treeequityscore.org/map/#10.31/41.852/-87.5946">treeequityscore.org</a>
+        <p>The comparison of neighborhood tree plantings and neighborhood Tree Equity Scores shows that more trees were planted in areas with higher Tree Equity Scores. Based on how the Tree Equity Scores were calculated, this means that <b>new trees were planted in areas that already had higher canopies levels, were wealthier, and had fewer people of color</b>. As such, the recent history of tree planting in Chicago, indicates that the city is doing little to address equity issues around access to urban canopy, and may actually be exacerbating these issues.
         </p>
-    </div>
+        <h2>Our Roots Chicago</h2>
+        <p>Early in 2022 the city announced its Our Roots Chicago program, as part of the city’s Climate Action Plan. This program has a goal of planting 75,000 trees across the city, with a focus on addressing equity issues, by planting trees in the areas with the most need. This is an important first step to improving the urban canopy in the city. However, more funding, advocacy, and resources will likely be necessary to continue long term improvements.</p>
+    <h2>Data Visualization and Story Process</h2>
+    <p>I chose this topic because, as a Chicago resident I see the benefit of living in a neighborhood with a lot of trees every day. I have also seen first hand the drastic change in canopy when going through neighborhoods in the poorer areas of the city. I started this project by looking into canopy equity in Chicago and obtained data on equity from <a href="https://www.treeequityscore.org/map/#10.31/41.852/-87.5946">treeequityscore.org</a>. Continuing to search for supplemental information I found the data from <a href="https://www.vibrantcitieslab.com/wordpress/wp-content/uploads/2017/04/Tree-Canopy-Goals-US-2014.pdf">Vibrant Cities Lab</a> and the reporting from <a href="https://www.chicagotribune.com/news/environment/ct-chicago-trees-equity-20220612-prpuxgsabzc2fa4fnwnyf4fbku-story.html">The Chicago Tribune </a>on recent tree plantings in the city. This helped me create the story to place Chicago in the context of other cities and visualize recent struggles with canopy cover and equity in access to trees.</p>
+    <p>For the first three charts I chose simple graphs that I felt clearly communicated the information I wanted to present. I chose the green color scheme for each of them because I wanted to invoke the feeling of greenery from trees in the viewer. For the bar chart, I chose to specifically highlight Chicago with its own color, as well as use the empty bars for the city goals, to try to visualize that these were targets that have yet to be met. In the diverging area chart, I added the annotation about the ash borer beetle, because I felt that it really helped to tell the story about why there was an abrupt change in the net number of trees.</p>    
+    <p>I chose a scatter plot to demonstrate where trees were planted in the context of the tree equity score. I chose this chart type because I felt that it would be able to communicate a lot of different information in one place. I feel that using color helped to highlight both the benefit of urban trees in mitigating urban heat island effects and to communicate that trees were being planted in areas that were already cool. The circle size I felt was valuable to highlight inequity in the city. Chicago is still highly segregated and I felt that the circle size representing the proportion of people of color would help to emphasize the continuing lack of resources those communities receive.</p>
+    <p>I experimented with making some of the graphs interactive. In particular ,the bar chart I considered the option to select how it was sorted and in the scatter plot I wanted the viewer to be able to select which Tree Equity Score inputs were used to create the size and the color of the circles. However, I ultimately chose to keep the charts static. I felt that there was enough information being displayed to clearly tell the story and that the interactivity would be distracting and potentially overwhelming without adding enough value.</p>
+    <h3>References</h3>
+    <p class="ref"><sup>1</sup>“Heat Island Effect | US EPA.” EPA.gov, 6 Oct. 2022, https://www.epa.gov/heatislands.</p>
+    <p class="ref"><sup>2</sup>Stone, Brian. “Urban and Rural Temperature Trends in Proximity to Large US Cities: 1951–2000.” International Journal of Climatology, vol. 27, no. 13, 2007, pp. 1801–1807., https://doi.org/10.1002/joc.1555. </p>
+    <p class="ref"><sup>3</sup>Nowak, David J., and John F. Dwyer. “Understanding the Benefits and Costs of Urban Forest Ecosystems.” Urban and Community Forestry in the Northeast, 2007, pp. 25–46., https://doi.org/10.1007/978-1-4020-4289-8_2. </p>
+    <p class="ref"><sup>4</sup>Mayer, Helmut. “Air Pollution in Cities.” Atmospheric Environment, vol. 33, no. 24-25, 1999, pp. 4029–4037., https://doi.org/10.1016/s1352-2310(99)00144-2. </p>
+    <p class="ref"><sup>5</sup>Wolf, Kathleen L., et al. “Urban Trees and Human Health: A Scoping Review.” International Journal of Environmental Research and Public Health, vol. 17, no. 12, 2020, p. 4371., https://doi.org/10.3390/ijerph17124371. </p>
+    <p class="ref"><sup>6</sup>https://www.chicago.gov/city/en/depts/streets/provdrs/forestry/svcs/emeral_ash_borerpestofashtrees.html</p>
+
+</div>
 </body>
 </html>
 <script src="https://d3js.org/d3.v7.min.js"></script>

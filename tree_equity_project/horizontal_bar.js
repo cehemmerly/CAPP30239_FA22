@@ -9,8 +9,11 @@ d3.csv("data/UTC_goals.csv").then(data => {
     data.sort((a, b) => b.UTC - a.UTC); 
     
     const height = 600,
-          width = 800,
-          margin = ({ top: 50, right: 30, bottom: 45, left: 110 });
+          margin = ({ top: 50, right: 70, bottom: 45, left: 110 });
+
+    const width = d3.select("#bar-chart")
+          .node()
+          .getBoundingClientRect().width;
 
     let svg = d3.select("#bar-chart")
         .append("svg")
@@ -33,13 +36,13 @@ d3.csv("data/UTC_goals.csv").then(data => {
         .attr("transform", `translate(${margin.left - 5},0)`)
         .call(d3.axisLeft(y));
 
-    let bar2 = svg.selectAll(".bar2") // create bar groups
+    let bar2 = svg.selectAll(".bar2") 
         .append("g")
         .data(data)
         .join("g")
         .attr("class", "bar2");
 
-    bar2.append("rect") // add rect to bar group
+    bar2.append("rect") 
         .attr("fill", "white")
         .attr("x", margin.left)
         .attr("width", d => x(d.Goal_absolute) - margin.left)
@@ -47,20 +50,20 @@ d3.csv("data/UTC_goals.csv").then(data => {
         .attr("height", y.bandwidth())
         .attr("stroke", "black");
     
-    let bar1 = svg.selectAll(".bar1") // create bar groups
+    let bar1 = svg.selectAll(".bar1") 
         .append("g")
         .data(data)
         .join("g")
         .attr("class", "bar1"); 
 
-    bar1.append("rect") // add rect to bar group
+    bar1.append("rect")
         .attr("fill", d => d.City == 'Chicago' ? "#196F3D" : "#BCCDA4")
         .attr("x", margin.left)
         .attr("width", d => x(d.UTC) - margin.left)
         .attr("y", d => y(d.City))
         .attr("height", y.bandwidth());
     
-    bar1.append('text') // add labels
+    bar1.append('text') 
         .text(d => d.UTC)
         .attr('x', d => x(d.UTC)-10)
         .attr('y', d => y(d.City) + (y.bandwidth()/2))
@@ -73,10 +76,9 @@ d3.csv("data/UTC_goals.csv").then(data => {
         {
             note: {
             label: "Current Urban Canopy (%)",
-            // title: "Annotation title",
-            align: "left",  // try right or left
-            wrap: 200,  // try something smaller to see text split in several lines
-            padding: 10   // More = text lower
+            align: "left",  
+            wrap: 200, 
+            padding: 10   
             },
             color: ["grey"],
             x: x(47),
@@ -86,7 +88,6 @@ d3.csv("data/UTC_goals.csv").then(data => {
         }
         ]
         
-    // Add annotation to the chart
     const makeAnnotation1 = d3.annotation()
     .annotations(annotation1)
     svg.append("g")
@@ -96,10 +97,9 @@ d3.csv("data/UTC_goals.csv").then(data => {
         {
             note: {
             label: "City Canopy Goal (%)",
-            // title: "Annotation title",
-            align: "left",  // try right or left
-            wrap: 200,  // try something smaller to see text split in several lines
-            padding: 10   // More = text lower
+            align: "left",  
+            wrap: 200,  
+            padding: 10   
             },
             color: ["grey"],
             x: x(40),
@@ -109,7 +109,6 @@ d3.csv("data/UTC_goals.csv").then(data => {
         }
         ]
         
-    // Add annotation to the chart
     const makeAnnotation2 = d3.annotation()
     .annotations(annotation2)
     svg.append("g")
